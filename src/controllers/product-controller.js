@@ -88,7 +88,6 @@ exports.put = (req, res, next) => {
 }
 
 exports.delete = (req, res, next) => {
-    console.log(req.params.id);
     Product.findOneAndRemove({_id: req.params.id})
     .then(x => {
         res.status(200).send({

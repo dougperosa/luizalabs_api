@@ -1,4 +1,4 @@
-'use strict' //forca JS ser mais criterioso
+'use strict' 
 
 const app = require('../src/app')
 const http = require('http');
@@ -12,7 +12,6 @@ const server = http.createServer(app);
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
-console.log('API rodando na porta ' + port)
 
 function normalizePort(val) {
     const port = parseInt(val, 10);
